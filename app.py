@@ -202,4 +202,4 @@ with tab3:
     st.metric("Predictions saved in SQL", total_predictions)
 
 st.divider()
-st.caption("Built with Python, Pandas, scikit-learn, Plotly, Streamlit and SQLite.")
+
