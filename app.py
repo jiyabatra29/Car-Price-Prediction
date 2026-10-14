@@ -84,7 +84,7 @@ except Exception as e:
 
 st.title("🚗 CarWise")
 st.caption("Used-car price prediction and data analytics dashboard")
-st.info("Demo dataset is included so the project runs immediately. Replace data/cars.csv with a real dataset before presenting it as real-world analysis.")
+
 
 with st.sidebar:
     st.header("Filters")
@@ -94,7 +94,7 @@ with st.sidebar:
     max_year = int(data["year"].max())
     selected_years = st.slider("Manufacturing year", min_year, max_year, (min_year, max_year))
     st.divider()
-    st.caption("Data cleaning: duplicates removed, required numeric fields validated, invalid prices filtered.")
+    
 
 filtered = data.copy()
 if selected_fuel != "All":
